@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="503fef44-3b7c-44ad-820c-b78c8c4406be" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Sample-2/SampleBank2/src/main/java/com/example/SampleBank/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Sample-2/SampleBank2/src/main/java/com/example/SampleBank/controller/ContactController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Sample-2/SampleBank2/src/main/java/com/example/SampleBank/controller/LoansController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Sample-2/SampleBank2/src/main/java/com/example/SampleBank/controller/MyAccountBalanceController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Sample-2/SampleBank2/src/main/java/com/example/SampleBank/controller/MyAccountCards.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Sample-2/SampleBank2/src/main/java/com/example/SampleBank/controller/MyAccountController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Sample-2/SampleBank2/src/main/java/com/example/SampleBank/controller/NoticesController.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="36YxYdTtPTXp6WCREm1cKH6eRWF" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="503fef44-3b7c-44ad-820c-b78c8c4406be" name="Changes" comment="" />
+      <created>1765197354404</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1765197354404</updated>
+    </task>
+    <servers />
+  </component>
+</project>
