@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.Optional;
+
 @RestController
 @RequiredArgsConstructor
 public class UserController {
@@ -20,17 +22,26 @@ public class UserController {
     @PostMapping("/register")
     public ResponseEntity<String> addNewUser(@RequestBody Customer customer)
     {
-        try
-        {
+        try {
+            System.err.println("User Email: " + customer.getEmail());
+            System.err.println("User password: " + customer.getPassword());
             String pwd = passwordEncoder.encode(customer.getPassword());
             customer.setPassword(pwd);
-            Customer savCustomer = repository.save(customer);
-            if(savCustomer.getId()>0)
-            {
-                return ResponseEntity.status(HttpStatus.CREATED).body("Successfully Registered...");
+            System.out.println("After Encoder User actual Details: ");
+            System.err.println("User Email: " + customer.getEmail());
+            System.err.println("User password: " + customer.getPassword());
+
+            Optional<Customer> customer1 = repository.findByEmail(customer.getEmail());
+            if (customer1.isEmpty()) {
+                Customer savCustomer = repository.save(customer);
+                if (savCustomer.getId() > 0) {
+                    return ResponseEntity.status(HttpStatus.CREATED).body("Successfully Registered...");
+                } else {
+                    return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("can't Registered User...");
+                }
             }
             else {
-                return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("can't Registered User...");
+                return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("User already Exist with email");
             }
         }
         catch (Exception e)
