@@ -18,7 +18,9 @@ public class SecurityProdConfig {
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity security) throws Exception {
-        return security.requiresChannel(rcc->rcc.anyRequest().requiresSecure())
+        return security
+                .sessionManagement(session->session.invalidSessionUrl("/invalid").maximumSessions(1))
+                .requiresChannel(rcc->rcc.anyRequest().requiresSecure())
                 .csrf(csrf -> csrf.disable())
                 .authorizeHttpRequests(request -> request
                         .requestMatchers("/notices","/register","/contact","/error").permitAll()
